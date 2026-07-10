@@ -1,88 +1,37 @@
-# Carbon Monoxide (CO) Analysis Using Google Earth Engine
+# Documentation
 
-## Overview
+This directory contains supporting documentation for the **Sentinel-5P Carbon Monoxide (CO) Analysis using Google Earth Engine** project.
 
-This project demonstrates the analysis of atmospheric Carbon Monoxide (CO) concentrations using Sentinel-5P OFFL Level-3 data in Google Earth Engine (GEE). The workflow computes annual mean CO concentration, visualizes spatial distribution, generates descriptive statistics, and exports both raster and tabular outputs.
+## Contents
 
----
+### Methodology.pdf
 
-## Study Area
+Describes the complete methodology used in the project, including:
 
-- Area of Interest (AOI): User-defined study area
-- Example: Dhaka Metropolitan Area, Bangladesh
+* Data acquisition
+* Image preprocessing
+* Annual mean CO calculation
+* Spatial visualization
+* Statistical analysis
+* Export of GeoTIFF and CSV outputs
 
----
+### References.pdf
+
+Contains the scientific literature, datasets, and documentation referenced in this project.
 
 ## Dataset
 
-**Satellite:** Sentinel-5P
+* **Satellite:** Sentinel-5P
+* **Product:** OFFL Level-3 Carbon Monoxide (CO)
+* **Platform:** Google Earth Engine
 
-**Product:** OFFL Level-3 Carbon Monoxide
+## Purpose
 
-**Band Used:**
+The documents in this folder provide detailed information about the project's methodology, workflow, and references, enabling users to understand, reproduce, and extend the analysis.
 
-- CO_column_number_density
+## Related Directories
 
----
-
-## Time Period
-
-1 January 2025 – 31 December 2025
-1 January 2020 - 31 Decemder 2021
----
-
-## Workflow
-
-1. Load Area of Interest (AOI)
-2. Load Sentinel-5P CO dataset
-3. Filter images by date
-4. Calculate annual mean CO concentration
-5. Clip to study area
-6. Calculate descriptive statistics
-7. Visualize CO concentration
-8. Export GeoTIFF map
-9. Export statistics as CSV
-
----
-
-## Outputs
-
-- Annual Mean CO Concentration Map
-- Carbon Monoxide Statistics (CSV)
-- GeoTIFF Raster
-
----
-
-## Software
-
-- Google Earth Engine
-- JavaScript API
-- QGIS / ArcGIS Pro
-
----
-
-## Repository Structure
-
-```
-scripts/
-data/
-figures/
-results/
-docs/
-```
-
----
-
-## Author
-
-Acia Alam
-
-M.Sc. in Geography and Environment
-
-Bangladesh
-
----
-
-## License
-
-This project is licensed under the MIT License.
+* `scripts/` – Google Earth Engine JavaScript code
+* `data/` – Study area and sample data
+* `figures/` – Maps and workflow illustrations
+* `results/` – Exported GeoTIFF maps and CSV statistics
