@@ -1,88 +1,60 @@
-# Carbon Monoxide (CO) Analysis Using Google Earth Engine
+# CO_Analysis_2025.js
 
-## Overview
+## Description
 
-This project demonstrates the analysis of atmospheric Carbon Monoxide (CO) concentrations using Sentinel-5P OFFL Level-3 data in Google Earth Engine (GEE). The workflow computes annual mean CO concentration, visualizes spatial distribution, generates descriptive statistics, and exports both raster and tabular outputs.
-
----
-
-## Study Area
-
-- Area of Interest (AOI): User-defined study area
-- Example: Dhaka Metropolitan Area, Bangladesh
-
----
+This Google Earth Engine (GEE) script analyzes annual atmospheric Carbon Monoxide (CO) concentration using Sentinel-5P OFFL Level-3 data. The script calculates the annual mean CO column number density, visualizes the spatial distribution, computes descriptive statistics for the study area, and exports both the raster map and statistics for further analysis.
 
 ## Dataset
 
-**Satellite:** Sentinel-5P
-
-**Product:** OFFL Level-3 Carbon Monoxide
-
-**Band Used:**
-
-- CO_column_number_density
-
----
+* **Satellite:** Sentinel-5P
+* **Product:** COPERNICUS/S5P/OFFL/L3_CO
+* **Band:** CO_column_number_density
 
 ## Time Period
 
-1 January 2025 – 31 December 2025
-1 January 2020 - 31 Decemder 2021
----
+* **Start Date:** 2025-01-01
+* **End Date:** 2026-01-01
 
 ## Workflow
 
-1. Load Area of Interest (AOI)
-2. Load Sentinel-5P CO dataset
-3. Filter images by date
-4. Calculate annual mean CO concentration
-5. Clip to study area
-6. Calculate descriptive statistics
-7. Visualize CO concentration
-8. Export GeoTIFF map
-9. Export statistics as CSV
-
----
+1. Load the Area of Interest (AOI).
+2. Load the Sentinel-5P CO image collection.
+3. Filter the collection by date.
+4. Calculate the annual mean CO concentration.
+5. Clip the image to the AOI.
+6. Visualize the CO concentration map.
+7. Compute descriptive statistics (Mean, Minimum, and Maximum).
+8. Export the CO map as a GeoTIFF.
+9. Export statistics as a CSV file (optional).
 
 ## Outputs
 
-- Annual Mean CO Concentration Map
-- Carbon Monoxide Statistics (CSV)
-- GeoTIFF Raster
+* Annual Mean CO Concentration Map
+* CO Statistics (Mean, Minimum, Maximum)
+* GeoTIFF (.tif)
+* CSV Statistics (.csv)
 
----
+## Requirements
 
-## Software
+* Google Earth Engine Account
+* JavaScript Code Editor
+* Area of Interest (AOI) uploaded as an Earth Engine asset
 
-- Google Earth Engine
-- JavaScript API
-- QGIS / ArcGIS Pro
+## How to Run
 
----
-
-## Repository Structure
-
-```
-scripts/
-data/
-figures/
-results/
-docs/
-```
-
----
+1. Open the Google Earth Engine Code Editor.
+2. Import your AOI asset.
+3. Copy and paste the script into the editor.
+4. Click **Run**.
+5. Start the export tasks from the **Tasks** panel.
 
 ## Author
 
-Acia Alam
+**Acia Alam**
 
 M.Sc. in Geography and Environment
 
-Bangladesh
-
----
-
 ## License
 
-This project is licensed under the MIT License.
+MIT License
+
