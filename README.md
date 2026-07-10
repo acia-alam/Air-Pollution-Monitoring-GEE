@@ -1,88 +1,48 @@
-# Carbon Monoxide (CO) Analysis Using Google Earth Engine
+# Results
 
-## Overview
+This folder contains the outputs generated from the **Sentinel-5P Carbon Monoxide (CO) Analysis** using Google Earth Engine.
 
-This project demonstrates the analysis of atmospheric Carbon Monoxide (CO) concentrations using Sentinel-5P OFFL Level-3 data in Google Earth Engine (GEE). The workflow computes annual mean CO concentration, visualizes spatial distribution, generates descriptive statistics, and exports both raster and tabular outputs.
+## Contents
 
----
+### CO_Map_2025.tif
 
-## Study Area
+Annual mean Carbon Monoxide (CO) concentration map for the study area, exported in GeoTIFF format.
 
-- Area of Interest (AOI): User-defined study area
-- Example: Dhaka Metropolitan Area, Bangladesh
+**Properties**
 
----
-
-## Dataset
-
-**Satellite:** Sentinel-5P
-
-**Product:** OFFL Level-3 Carbon Monoxide
-
-**Band Used:**
-
-- CO_column_number_density
+* Dataset: Sentinel-5P OFFL Level-3
+* Band: `CO_column_number_density`
+* Time Period: 1 January 2025 – 31 December 2025
+* Spatial Resolution: 1000 m
+* Format: GeoTIFF
 
 ---
 
-## Time Period
+### CO_Statistics_2025.csv
 
-1 January 2025 – 31 December 2025
-1 January 2020 - 31 Decemder 2021
----
+Descriptive statistics of annual mean Carbon Monoxide (CO) concentration within the Area of Interest (AOI).
 
-## Workflow
+The CSV file may include the following statistics:
 
-1. Load Area of Interest (AOI)
-2. Load Sentinel-5P CO dataset
-3. Filter images by date
-4. Calculate annual mean CO concentration
-5. Clip to study area
-6. Calculate descriptive statistics
-7. Visualize CO concentration
-8. Export GeoTIFF map
-9. Export statistics as CSV
+* Mean
+* Minimum
+* Maximum
+* Standard Deviation (if exported)
+* Median (if exported)
 
 ---
 
-## Outputs
+## File Descriptions
 
-- Annual Mean CO Concentration Map
-- Carbon Monoxide Statistics (CSV)
-- GeoTIFF Raster
-
----
-
-## Software
-
-- Google Earth Engine
-- JavaScript API
-- QGIS / ArcGIS Pro
+| File                   | Description                                   |
+| ---------------------- | --------------------------------------------- |
+| CO_Map_2025.tif        | Annual mean Carbon Monoxide concentration map |
+| CO_Statistics_2025.csv | Descriptive statistics for the study area     |
 
 ---
 
-## Repository Structure
+## Notes
 
-```
-scripts/
-data/
-figures/
-results/
-docs/
-```
-
----
-
-## Author
-
-Acia Alam
-
-M.Sc. in Geography and Environment
-
-Bangladesh
-
----
-
-## License
-
-This project is licensed under the MIT License.
+* Results were generated using Google Earth Engine.
+* CO concentration values represent the annual mean of Sentinel-5P observations for the selected study period.
+* All outputs are clipped to the Area of Interest (AOI).
