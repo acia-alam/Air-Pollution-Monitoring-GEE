@@ -40,6 +40,11 @@ Replace this section with your study area's details, for example:
 - **Geometry Type:** Polygon
 - **Projection:** WGS 84 (EPSG:4326)
 
+## Data Downlode
+
+large data are here-
+https://drive.google.com/file/d/13sNCnYI4iTSxnXAAC3xF-ACQtSV0qXRz/view?usp=sharing
+
 ## Notes
 
 Ensure that the AOI boundary is accurate and covers the entire study region before running the analysis.
