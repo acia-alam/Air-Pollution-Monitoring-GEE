@@ -36,7 +36,7 @@ WGS 84 (EPSG:4326)
 
 Replace this section with your study area's details, for example:
 
-- **Location:** Dhaka Metropolitan Area, Bangladesh
+- **Location:** Canada 
 - **Geometry Type:** Polygon
 - **Projection:** WGS 84 (EPSG:4326)
 
